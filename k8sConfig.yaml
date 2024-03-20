@@ -1,0 +1,12 @@
+---
+#specifying that we are configuring a KIND cluster and an API version (Want to learn more about API verison)
+kind: Cluster
+apiVersion: kind.x-k8s.io/v1alpha4
+#Naming the cluster
+name: task-1-cluster
+#Specifying numbers of nodes and role of the nodes in this cluster
+nodes:
+- role: control-plane
+- role: worker
+- role: worker
+
